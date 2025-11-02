@@ -1,0 +1,19 @@
+/* Add a bottom border to H1 headings */
+.content h1 {
+    border-bottom: 1px solid var(--theme-text); /* Uses the current theme's text color */
+    padding-bottom: 0.3em; /* Adds some space below the line */
+}
+
+/* Add a left border to H2 headings, similar to a vertical line */
+.content h2 {
+    border-left: 4px solid var(--theme-text);
+    padding-left: 0.5em; /* Space between the line and the text */
+    margin-left: 0.2em; /* Adjust as needed */
+}
+
+/* Add a lighter left border to H3 headings */
+.content h3 {
+    border-left: 2px solid var(--theme-text);
+    padding-left: 0.5em;
+    margin-left: 0.4em;
+}

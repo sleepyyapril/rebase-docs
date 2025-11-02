@@ -1,0 +1,36 @@
+[book]
+authors = ["The Den Contributors"]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Den Rebase Development Wiki"
+
+[preprocessor.admonish]
+command = "mdbook-admonish"
+assets_version = "3.0.2" # do not edit: managed by `mdbook-admonish install`
+
+[preprocessor.pagetoc]
+
+[preprocessor.template]
+before = ["admonish"] # templates can include these so we run this first
+
+[output.html]
+additional-css          = [ "theme/section-lines.css" , "theme/mdbook-admonish.css" , "theme/pagetoc.css" , "theme/mdbook-admonish.css"]
+additional-js           = [ "theme/pagetoc.js" ]
+curly-quotes            = false
+git-repository-url      = "https://github.com/TheDenSS14/TheDenTwo"
+no-section-label        = true
+default-theme           = "coal"
+preferred-dark-theme    = "coal"
+title = "The Den Rebase Development Wiki"
+description = "Reference & design documentation for the SS14 rebase of The Den."
+
+[output.html.print]
+enable = false
+
+[output.html.playground]
+runnable = false
+
+[output.linkcheck]
+traverse-parent-directories = false
+warning-policy = "ignore" # false-positives like hell with absolute links & latex, so.. cant do
